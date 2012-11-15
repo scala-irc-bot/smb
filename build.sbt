@@ -1,5 +1,5 @@
 // -*- scala -*-
-name := "SmbBot"
+name := "smb"
 
 organization := "net.mtgto"
 

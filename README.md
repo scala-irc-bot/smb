@@ -5,7 +5,7 @@ smb is an irc bot to exchange SMB Path format between Mac / Windows for [scala-i
 # Installation
 1. git clone
 2. sbt package
-3. copy `smb-bot/target/scala-2.9.2/smbbot_2.9.2-0.1.0-SNAPSHOT.jar` to `scala-irc-bot/bots`.
+3. copy `smb/target/scala-2.9.2/smb_2.9.2-0.1.0-SNAPSHOT.jar` to `scala-irc-bot/bots`.
 4. modify `scala-irc-bot/config/Config.scala` like:
 
 ```scala
