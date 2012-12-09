@@ -15,12 +15,12 @@ class SmbBot extends Bot {
 
   private val macSubPathRegexp = """/([^/]+)""".r
 
-  override def onMessage(message: Message) = {
+  override def onMessage(client: Client, message: Message) = {
     win2mac(message.text) map {
-      convertedPath => Client.sendNotice(message.channel, convertedPath)
+      convertedPath => client.sendNotice(message.channel, convertedPath)
     }
     mac2win(message.text) map {
-      convertedPath => Client.sendNotice(message.channel, convertedPath)
+      convertedPath => client.sendNotice(message.channel, convertedPath)
     }
   }
 
