@@ -7,6 +7,10 @@ version := "0.1.0-SNAPSHOT"
 
 scalaVersion := "2.9.2"
 
+crossScalaVersions := Seq("2.9.2", "2.10.0")
+
+licenses := Seq("BSD license" -> url("https://github.com/scala-irc-bot/smb/blob/master/LICENSE.txt"))
+
 resolvers += "mtgto repos" at "http://scala-irc-bot.github.com/scala-irc-bot/maven/"
 
 libraryDependencies := Seq(
